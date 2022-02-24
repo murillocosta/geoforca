@@ -389,7 +389,7 @@ function comparaPalavras(letra){
 function mostraForca() {
     switch(numeroTentativas){
         case 5:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca12.png')";
+            document.getElementById("imagem").style.background = "url('../assets/img/forca1.png')";
             break;
         case 4:
             document.getElementById("imagem").style.background = "url('./../assets/img/forca2.png')";
