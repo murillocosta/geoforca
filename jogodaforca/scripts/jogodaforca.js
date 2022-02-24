@@ -363,7 +363,7 @@ function comparaPalavras(letra){
         numeroTentativas--;
         mostraForca();
         if (numeroTentativas == 0) {
-            mostraMsg("Deu forca!", "Suas chances acabaram, a palavra era: <br>" + palavraSecreta + "<br> Clique na lupa se quiser tentar novamente!");
+            alert("Deu forca! Suas chances acabaram, a palavra era:\n" + palavraSecreta + "\nClique na lupa se quiser tentar novamente!");
         }
 
     } else {
@@ -381,48 +381,38 @@ function comparaPalavras(letra){
     }
 
     if(vitoria == true) {
-        mostraMsg("Fugiu da Forca!", "Parabéns, você acertou a palavra! Clique na lupa se quiser jogar novamente!")        
+        alert("Fugiu da Forca! Parabéns, você acertou a palavra! Clique na lupa se quiser jogar novamente!")        
         numeroTentativas = 0;
     }
 };
 
+
 function mostraForca() {
     switch(numeroTentativas){
         case 5:
-            document.getElementById("imagem").style.background = "url('../assets/img/forca1.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca1.png')";
             break;
         case 4:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca2.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca2.png')";
             break;
         case 3:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca3.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca3.png')";
             break;
         case 2:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca4.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca4.png')";
             break;
         case 1:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca5.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca5.png')";
             break;
         case 0:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca5.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca6.png')";
             break;
         default:
-            document.getElementById("imagem").style.background = "url('./../assets/img/forca0.png')";
+            document.getElementById("imagem").style.background = "url('/jogodaforca/assets/img/forca0.png')";
             break;
     }
     };
 
-    function mostraMsg(titulo, mensagem) {
-        let tituloModal = document.getElementById('exampleModalLabel');
-        tituloModal.innerText = titulo;
-
-        let corpoModal = document.getElementById('modal-body');
-        corpoModal.innerHTML = mensagem;
-
-        $("#meuModal").modal({
-            show: true
-        });
-    }
 
 let reiniciaJogo = document.getElementById('reiniciar');
 reiniciaJogo.addEventListener("click", function() {
