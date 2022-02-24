@@ -362,6 +362,9 @@ function comparaPalavras(letra){
     if (posicao < 0) {
         numeroTentativas--;
         mostraForca();
+        if (numeroTentativas == 0) {
+            mostraMsg("Deu forca!", "Suas chances acabaram, a palavra era: <br>" + palavraSecreta + "<br> Clique na lupa se quiser tentar novamente!");
+        }
 
     } else {
         for (i = 0; i < palavraSecreta.length; i++) {
@@ -378,8 +381,7 @@ function comparaPalavras(letra){
     }
 
     if(vitoria == true) {
-
-        
+        mostraMsg("Fugiu da Forca!", "Parabéns, você acertou a palavra! Clique na lupa se quiser jogar novamente!")        
         numeroTentativas = 0;
     }
 };
@@ -387,7 +389,7 @@ function comparaPalavras(letra){
 function mostraForca() {
     switch(numeroTentativas){
         case 5:
-            document.getElementById("imagem").style.background = "url('./jogodaforca/assets/img/forca1.png')";
+            document.getElementById("imagem").style.background = "url('./../img/forca1.png')";
             break;
         case 4:
             document.getElementById("imagem").style.background = "url('./../assets/img/forca2.png')";
@@ -409,3 +411,20 @@ function mostraForca() {
             break;
     }
     };
+
+    function mostraMsg(titulo, mensagem) {
+        let tituloModal = document.getElementById('exampleModalLabel');
+        tituloModal.innerText = titulo;
+
+        let corpoModal = document.getElementById('modal-body');
+        corpoModal.innerHTML = mensagem;
+
+        $("#meuModal").modal({
+            show: true
+        });
+    }
+
+let reiniciaJogo = document.getElementById('reiniciar');
+reiniciaJogo.addEventListener("click", function() {
+    location.reload();
+});
