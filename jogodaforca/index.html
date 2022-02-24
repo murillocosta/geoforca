@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>GeoForca</title>
+</head>
+<body>
+    <div class="container">
+        <div id="imagem"></div>
+        <div id="palavra-secreta">
+            <!-- <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div> -->
+        </div>
+        <div id="displayCategoria">
+            
+        </div>
+        <div id="teclado">
+            <div class="teclas">
+                <button id="teclaQ" onclick="verificaLetra('Q')">Q</button>
+                <button id="teclaW" onclick="verificaLetra('W')">W</button>
+                <button id="teclaE" onclick="verificaLetra('E')">E</button>
+                <button id="teclaR" onclick="verificaLetra('R')">R</button>
+                <button id="teclaT" onclick="verificaLetra('T')">T</button>
+                <button id="teclaY" onclick="verificaLetra('Y')">Y</button>
+                <button id="teclaU" onclick="verificaLetra('U')">U</button>
+                <button id="teclaI" onclick="verificaLetra('I')">I</button>
+                <button id="teclaO" onclick="verificaLetra('O')">O</button>
+                <button id="teclaP" onclick="verificaLetra('P')">P</button>
+            </div>
+
+            <div class="teclas">
+                <button id="teclaA" onclick="verificaLetra('A')">A</button>
+                <button id="teclaS" onclick="verificaLetra('S')">S</button>
+                <button id="teclaD" onclick="verificaLetra('D')">D</button>
+                <button id="teclaF" onclick="verificaLetra('F')">F</button>
+                <button id="teclaG" onclick="verificaLetra('G')">G</button>
+                <button id="teclaH" onclick="verificaLetra('H')">H</button>
+                <button id="teclaJ" onclick="verificaLetra('J')">J</button>
+                <button id="teclaK" onclick="verificaLetra('K')">K</button>
+                <button id="teclaL" onclick="verificaLetra('L')">L</button>
+            </div>
+
+            <div class="teclas">
+                <button id="reiniciar">🔍</button>
+                <button id="teclaZ" onclick="verificaLetra('Z')">Z</button>
+                <button id="teclaX" onclick="verificaLetra('X')">X</button>
+                <button id="teclaC" onclick="verificaLetra('C')">C</button>
+                <button id="teclaV" onclick="verificaLetra('V')">V</button>
+                <button id="teclaB" onclick="verificaLetra('B')">B</button>
+                <button id="teclaN" onclick="verificaLetra('N')">N</button>
+                <button id="teclaM" onclick="verificaLetra('M')">M</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="scripts/jogodaforca.js"></script>
+</body>
+</html>

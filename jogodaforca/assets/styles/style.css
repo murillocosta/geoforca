@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    background-color: cornflowerblue;
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#imagem {
+    background: url("./../img/forca0.png");
+    width: 14.625rem;
+    height: 17rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.875rem;
+    
+}
+
+.letras {
+    width: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #071622;
+    color: black;
+    padding: 0.5rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 4rem;
+}
+
+#teclado {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclas button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #315F85;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px #88D4F2;
+    border-radius: 5px;
+    border: 1px solid #88D4F2;
+    color: rgb(15, 14, 14);
+    font-family: 'Comic Neue', cursive;
+    font-weight: 900;
+}
+
+.teclas button:hover {
+    transform: scale(1.3);
+}
+
+#displayCategoria {
+    margin-top: 1.875rem;
+    color: #315F85;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 321px) {
+    .teclas button {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    
+    #displayCategoria {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width: 375px) {
+    .teclas button {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    #palavra-secreta {
+        font-size: 2.5rem;
+    }
+
+    .letras {
+        width: 2.5rem;
+    }
+
+    #displayCategoria {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 426px) {
+    .teclas button {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    #palavra-secreta {
+        font-size: 2.7rem;
+    }
+
+    .letras {
+        width: 3rem;
+    }
+
+    #displayCategoria {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .teclas button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    #displayCategoria {
+        font-size: 2.7rem;
+    }
+
+    .letras {
+        width: 3rem;
+    }
+
+    #displayCategoria {
+        font-size: 2.2rem;
+    }
+
+}
