@@ -1,4 +1,4 @@
-# GeoForca
+# GeoForca :earth_americas:
 Joga da Forca feito em HTML, CSS e JavaScript com temática voltada pra Geografia.
 
 Temas: 
