@@ -11,6 +11,12 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 
+h1 {
+    color: #315F85;
+    text-shadow: 1px 1px 5px #315F85;
+    font-size: 3rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
