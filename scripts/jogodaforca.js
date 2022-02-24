@@ -390,25 +390,25 @@ function comparaPalavras(letra){
 function mostraForca() {
     switch(numeroTentativas){
         case 5:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca1.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca1.png')";
             break;
         case 4:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca2.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca2.png')";
             break;
         case 3:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca3.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca3.png')";
             break;
         case 2:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca4.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca4.png')";
             break;
         case 1:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca5.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca5.png')";
             break;
         case 0:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca6.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca6.png')";
             break;
         default:
-            document.getElementById("imagem").style.background = "url('/assets/img/forca0.png')";
+            document.getElementById("imagem").style.background = "url('./assets/img/forca0.png')";
             break;
     }
     };
